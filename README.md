@@ -130,15 +130,89 @@ You can adjust or expand this table depending on how your repo is structured. If
 
 ## 📦 Installation & Requirements
 
-### ✅ Prerequisites
-- Python 3.8+
-- Node.js
-- MySQL Server
+- ✅ Frontend setup  
+- ✅ Backend setup  
+- ✅ Database setup (export/import)
+
+---
+
+### 🛠️ Setup Guide
+
+#### ✅ Prerequisites
+Ensure you have the following installed:
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Node.js v14+](https://nodejs.org/)
+- [MySQL Server](https://dev.mysql.com/downloads/mysql/)
+- [Git](https://git-scm.com/)
+
+---
 
 ### 🔧 Backend Setup
+
 ```bash
 git clone https://github.com/yourusername/smart-inventory.git
-cd backend
+cd smart-inventory/backend
 pip install -r requirements.txt
 uvicorn main:app --reload
-"# Smart-Restaurement-management-using-openCV" 
+```
+
+> This runs the FastAPI backend on `http://localhost:8000`. It powers all APIs for inventory detection, freshness tracking, smart recommendations, and more.
+
+---
+
+### 🎨 Frontend Setup
+
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
+> Starts the React + Tailwind frontend on `http://localhost:3000`. The dashboard allows monitoring, visualization, and interaction with the AI engine.
+
+---
+
+### 🗃️ Database Setup
+
+#### 📥 Importing the MySQL Database (if `.sql` file provided)
+
+```bash
+mysql -u root -p
+CREATE DATABASE petpooja;
+exit
+
+mysql -u root -p petpooja < petpooja_dump.sql
+```
+
+> Replace `root` with your MySQL username if different.
+
+#### 💾 Exporting (Dumping) the Database
+If you need to back it up:
+
+```bash
+mysqldump -u root -p petpooja > petpooja_dump.sql
+```
+
+#### 📥 Setup .env
+
+```bash
+# MySQL Database Configuration
+SQLDatabase=petpooja
+SQLHost=localhost
+SQLUser=root
+SQLPassword=*Your-password*
+```
+---
+
+### 📸 Frontend UI Snapshots
+
+| 📷 Screenshot | 💬 Description |
+|--------------|----------------|
+|<img src="Images/Added Item.png"> | **Added Item:** Confirmation after successful detection and tracking of a new inventory item. |
+| <img src="Images/Adding Item.png"> | **Adding Item:** Real-time item detection in progress using uploaded inventory image. |
+| <img src="Images/Menu Recommendation.png"> | **Menu Recommendation:** AI-driven suggestions based on ingredients that are about to spoil. |
+| <img src="Images/Menu.png"> | **Menu Customization:** View and select from a smart, optimized list of menu items. |
+| !<img src="Images/Sales Dashbaord.png">| **Sales Dashboard:** Visual overview of predicted sales and ingredient requirements. |
+
+
+---
