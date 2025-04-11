@@ -4,6 +4,18 @@ A cutting-edge AI-powered solution for **automated inventory management**, **rea
 
 ---
 
+## 👨‍💻 Team
+
+**Team Name**:  
+- Satwik Kishore  
+- Neeharika Joshi  
+- Sonu Pandit  
+- Shubham Pandit  
+
+**Institution**: Marwadi University
+
+---
+
 ## 🚀 Features
 
 ### 📦 1. Automatic Inventory Management
@@ -115,18 +127,6 @@ Great idea, Satwik! Let's add a clean, well-organized section called **📁 File
 ---
 
 You can adjust or expand this table depending on how your repo is structured. If you want, I can take a peek at the actual folder layout and auto-generate this for you too. Just let me know.
-
-## 👨‍💻 Team
-
-**Team Name**:  
-- Satwik Kishore  
-- Neeharika Joshi  
-- Sonu Pandit  
-- Shubham Pandit  
-
-**Institution**: Marwadi University
-
----
 
 ## 📦 Installation & Requirements
 
